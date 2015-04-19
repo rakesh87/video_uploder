@@ -1,4 +1,4 @@
-<div class="container-fluid mt-60">
+<div class="container-fluid mt-110">
   <h1>Upload</h1>
  
   <%= form_for @video do |f| %>
@@ -9,6 +9,6 @@
       <%= f.file_field :file, class: 'form-control', required: true %>
     </div>
  
-    <%= f.submit 'Upload video', class: 'btn btn-primary' %>
+    <%= f.submit 'Upload video', class: 'btn btn-primary uploadVideo', id: 'uploadVideo'%>
   <% end %>
 </div>

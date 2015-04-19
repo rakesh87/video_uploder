@@ -2,10 +2,6 @@ class CreateVideos < ActiveRecord::Migration
   def change
     create_table :videos do |t|
       t.string :file
-      t.string :title
-      t.datetime :published_at
-      t.integer :likes
-      t.integer :dislikes
       t.string :uid
 
       t.timestamps null: false

@@ -23,13 +23,9 @@ ActiveRecord::Schema.define(version: 20150419053619) do
 
   create_table "videos", force: :cascade do |t|
     t.string   "file"
-    t.string   "title"
-    t.datetime "published_at"
-    t.integer  "likes"
-    t.integer  "dislikes"
     t.string   "uid"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_index "videos", ["uid"], name: "index_videos_on_uid"
