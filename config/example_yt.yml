@@ -1,0 +1,11 @@
+# you have to provide your CLIENT_ID AND CLIENT_SECRET here, group by your environment 
+# at last rename this file to yt.yml
+# see example below:
+
+# development:
+#   yt_client_id: testappid.apps.googleusercontent.com
+#   yt_client_secret: 1234567890
+
+# production:
+#   yt_client_id: testappid.apps.googleusercontent.com
+#   yt_client_secret: 1234567890

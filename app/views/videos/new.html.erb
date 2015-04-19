@@ -1,0 +1,14 @@
+<div class="container-fluid mt-60">
+  <h1>Upload</h1>
+ 
+  <%= form_for @video do |f| %>
+    <%= render 'shared/errors', object: @video %>
+ 
+    <div class="form-group">
+      <%= f.label :file %>
+      <%= f.file_field :file, class: 'form-control', required: true %>
+    </div>
+ 
+    <%= f.submit 'Upload video', class: 'btn btn-primary' %>
+  <% end %>
+</div>

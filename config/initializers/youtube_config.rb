@@ -1,0 +1,1 @@
+YT_CREDENTIAL = YAML.load_file("#{Rails.root}/config/yt.yml")[Rails.env]
