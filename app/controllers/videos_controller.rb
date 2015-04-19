@@ -15,7 +15,8 @@ class VideosController < ApplicationController
 		  	uploader = YoutubeUploader.new(YT_CREDENTIAL['yt_token'], upload_file_path)
 		  	uploader.upload!
 		  rescue Yt::Errors::Unauthorized => e
-		  	flash[:error] = "Can't upload video : #{e.message.split(':').try(:first).strip}"
+
+		  	flash[:error] = "Can't upload video : #{e.message.split(':').try(:first).strip}. Create new token by login again"
 	    	return render :new
 		  end
 	    flash[:success] = 'Video uploaded!'
